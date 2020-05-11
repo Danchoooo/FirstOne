@@ -1,0 +1,430 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(white, rgb(255, 225, 230));
+}
+.border {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -3;
+}
+.position {
+  position: absolute;
+  width: 89%;
+  height: 79%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  border: 4px pink double;
+  z-index: -1;
+  left: 5.3%;
+  top: 11.7%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+button {
+  border: 2px whitesmoke solid;
+  background-color: transparent;
+  padding: 10px 20px;
+}
+input {
+  background-color: rgba(255, 255, 255, 0.322);
+  border: 2px solid whitesmoke;
+  padding: 30px 50px;
+}
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: greenyellow;
+  display: none;
+}
+.left {
+  position: absolute;
+  left: -40%;
+  top: -40%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.right {
+  position: absolute;
+  right: -40%;
+  top: -40%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.top {
+  position: absolute;
+
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.bottom {
+  position: absolute;
+  left: -40%;
+  bottom: -40%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.center {
+  position: absolute;
+  bottom: -30%;
+  right: -30%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.left1 {
+  position: absolute;
+  left: -40%;
+  top: -20%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.right1 {
+  position: absolute;
+  right: -30%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.top1 {
+  position: absolute;
+
+  top: -30%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.bottom1 {
+  position: absolute;
+  left: -30%;
+  bottom: 10%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.center1 {
+  position: absolute;
+  bottom: -40%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  animation-name: falling;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes falling {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.container {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*border: 2px solid black;*/
+  overflow: hidden;
+  z-index: 998;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.structure {
+  height: 100%;
+  /*border: 2px solid black;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 999;
+}
+a:hover {
+  cursor: pointer;
+}
+h1 {
+  margin: 1%;
+  color: black;
+  background-image: linear-gradient(
+    to right,
+    rgba(245, 252, 252, 0.705),
+    rgba(236, 236, 225, 0.363),
+    rgba(187, 189, 187, 0)
+  );
+  text-shadow: 4px 4px 15px rgb(248, 244, 244);
+}
+p {
+  width: 50%;
+  text-align: center;
+  align-self: center;
+  background-image: radial-gradient(
+    circle,
+    rgba(245, 252, 252, 0.829),
+    rgba(236, 236, 225, 0.363),
+    rgba(187, 189, 187, 0)
+  );
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 4px 4px 15px rgb(248, 244, 244);
+}
+.structure > button {
+  width: 10%;
+  align-self: center;
+}
+nav {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+form {
+  height: 20%;
+  margin: 3%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer {
+  text-align: center;
+}
+.acomodation {
+  background: url(sliki4/acomodation.jpg) center/cover no-repeat;
+  position: absolute;
+  left: 0%;
+  width: 60%;
+  transition-duration: 1s;
+}
+.resturants {
+  background: url(sliki4/restaurant.jpg) center/cover no-repeat;
+  position: absolute;
+  left: 60%;
+  width: 60%;
+  transition-duration: 1s;
+}
+.spa {
+  background: url(sliki4/spa.jpg) center/cover no-repeat;
+  position: absolute;
+  left: 70%;
+  width: 60%;
+  transition-duration: 1s;
+}
+.wedings {
+  background: url(sliki4/wedings.jpg) center/cover no-repeat;
+  position: absolute;
+  left: 80%;
+  width: 60%;
+  transition-duration: 1s;
+}
+.services {
+  background: url(sliki4/services.jpg) center/cover no-repeat;
+  position: absolute;
+  left: 90%;
+  width: 60%;
+  transition-duration: 1s;
+}
+h1 {
+  text-align: left;
+}
+
+.acomodation:hover {
+  background: url(sliki4/acomodation.jpg) left/cover no-repeat;
+}
+.resturants:hover {
+  background: url(sliki4/restaurant.jpg) left/cover no-repeat;
+}
+.spa:hover {
+  background: url(sliki4/spa.jpg) left/cover no-repeat;
+}
+.wedings:hover {
+  background: url(sliki4/wedings.jpg) left/cover no-repeat;
+}
+.services:hover {
+  background: url(sliki4/services.jpg) left/cover no-repeat;
+}
+.efect1 {
+  animation: efect1 20s infinite none;
+}
+.efect2 {
+  animation: efect1 20s infinite none;
+  animation-delay: 1s;
+}
+.efect3 {
+  animation: efect1 20s infinite none;
+  animation-delay: 1.5s;
+}
+.efect4 {
+  animation: efect1 20s infinite none;
+  animation-delay: 6s;
+}
+.efect5 {
+  animation: efect1 20s infinite none;
+  animation-delay: 10s;
+}
+.efect6 {
+  animation: efect1 20s infinite none;
+  animation-delay: 12s;
+}
+.efect7 {
+  animation: efect1 20s infinite none;
+  animation-delay: 14s;
+}
+.efect8 {
+  animation: efect1 20s infinite none;
+  animation-delay: 16s;
+}
+.efect9 {
+  animation: efect1 20s infinite none;
+  animation-delay: 18s;
+}
+.efect10 {
+  animation: efect1 20s infinite none;
+  animation-delay: 8s;
+}
+.efect11 {
+  animation: efect1 20s infinite none;
+  animation-delay: 12s;
+}
+.efect12 {
+  animation: efect1 20s infinite none;
+  animation-delay: 7s;
+}
+.efect13 {
+  animation: efect1 20s infinite none;
+  animation-delay: 15s;
+}
+.efect14 {
+  animation: efect1 20s infinite none;
+  animation-delay: 19s;
+}
+@keyframes efect1 {
+  0% {
+    width: 89%;
+    height: 79%;
+    left: 5.3%;
+    top: 11.7%;
+  }
+
+  100% {
+    width: 300%;
+    height: 500%;
+    left: -100%;
+    top: -200%;
+  }
+}
+.line1 {
+  border: transparent double;
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.line2 {
+  border: transparent double;
+  width: 6.5rem;
+  height: 2.5rem;
+  margin: auto;
+  display: inherit;
+}
+.line3 {
+  border: transparent double;
+  width: 6rem;
+  height: 2rem;
+  margin: auto;
+  display: inherit;
+}
+.line4 {
+  border: transparent double;
+  width: 5.5rem;
+  height: 1.5rem;
+  margin: auto;
+  display: inherit;
+  text-align: center;
+}
+.line4 > li {
+  margin: auto;
+  border: transparent double;
+}
+.line1 :hover {
+  border: pink double;
+  transition-duration: 1s;
+  transition-delay: 0.4s;
+}
+.line2 :hover {
+  border: pink double;
+  transition-duration: 1s;
+  transition-delay: 0.3s;
+}
+.line3 :hover {
+  border: pink double;
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+}
+.line4 :hover {
+  border: pink double;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+}
+.line4 > li :hover {
+  border: transparent;
+}
+.line4 > a :hover {
+  border: transparent;
+}
